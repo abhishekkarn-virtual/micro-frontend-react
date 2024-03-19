@@ -17,9 +17,7 @@ const devConfig = {
       remotes: {
         marketing: "marketing@http://localhost:8081/remoteEntry.js",
       },
-    }),
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      shared: packageJson.dependencies,
     }),
   ],
 };
